@@ -1,6 +1,6 @@
 ﻿stock_name,quantity,current_price,total
-AAPL,2,10,20
-GOOGL,1,10,10
-AMZN,1,10,10
-TSLA,1,10,10
-total_balance,,,50
+AAPL          ,       3 ,           10 ,30.0
+GOOGL         ,       2 ,           10 ,20.0
+AMZN          ,       1 ,           10 ,10.0
+TSLA          ,       1 ,           100 ,100.0
+total_balance ,         ,              ,160.0
