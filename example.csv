@@ -1,0 +1,6 @@
+﻿stock_name,quantity,current_price,total
+AAPL,2,10,20
+GOOGL,1,10,10
+AMZN,1,10,10
+TSLA,1,10,10
+total_balance,,,50
