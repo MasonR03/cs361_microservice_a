@@ -54,6 +54,7 @@ Access Details:
     https://github.com/MasonR03/cs361_microservice_a
 
 Execution: 
+    
     The microservice is designed to be run locally. You should run the code on your local machine.
 
 In case of issues accessing/calling the microservice:
@@ -65,5 +66,5 @@ In case of issues accessing/calling the microservice:
 Dependencies:
 
     Ensure that all dependencies (Python module watchdog) are installed.
-    If not, please install them using *pip install watchdog*.
+    If not, please install them using "pip install watchdog".
 
