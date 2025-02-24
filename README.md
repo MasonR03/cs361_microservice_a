@@ -12,11 +12,11 @@ This microservice updates stock balance data stored in a CSV file by recalculati
 
 **One-time update:**
 
-python3 totals.py path/to/your/stock_data.csv
+```python3 totals.py path/to/your/stock_data.csv```
 
 **Continuous Monitoring:**
 
-python3 totals.py path/to/your/stock_data.csv --monitor
+```python3 totals.py path/to/your/stock_data.csv --monitor```
 
 
 ## Programmatic Request / Receive
