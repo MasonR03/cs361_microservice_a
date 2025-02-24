@@ -30,10 +30,10 @@ csv_path = 'path/to/your/stock_data.csv'
 request_update(csv_path)
 ```
 
-**Example to Retrieve the Updated Total Balance**
-
 To programmatically retrieve the updated balance, call the read_updated_totals function. This reads the totals column in the CSV file and returns
 the total balance row.
+
+**Example to Retrieve the Updated Total Balance**
 
 ```python
 from totals import read_updated_totals
