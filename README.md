@@ -44,7 +44,7 @@ print("Total Balance Row:", total_balance)
 ## Mitigation Plan
 For which teammate did you implement “Microservice A”?
 
-    I implemented Microservice A for [Teammate Name].
+    I implemented Microservice A for Elliott.
 Current status of the microservice:
 
     The microservice is complete and fully functional.
