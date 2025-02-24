@@ -25,7 +25,6 @@ To programmatically update the CSV file totals, call the request_update function
 
 **Example**
     from totals import request_update
-
     # Replace with the path to your CSV file
     csv_path = 'path/to/your/stock_data.csv'
     request_update(csv_path)
@@ -34,7 +33,6 @@ To retrieve the updated total_balance row from your CSV file, use the read_updat
 
 **Example**
     from totals import read_updated_totals
-
     csv_path = 'path/to/your/stock_data.csv'
     total_balance = read_updated_totals(csv_path)
     print("Total Balance Row:", total_balance)
