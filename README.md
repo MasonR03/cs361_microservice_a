@@ -53,7 +53,8 @@ Access Details:
     You can clone the repository from GitHub using the following link:
     https://github.com/MasonR03/cs361_microservice_a
 
-Execution: The microservice is designed to be run locally. You should run the code on your local machine.
+Execution: 
+    The microservice is designed to be run locally. You should run the code on your local machine.
 
 In case of issues accessing/calling the microservice:
 
@@ -61,7 +62,8 @@ In case of issues accessing/calling the microservice:
     I am available during regular working hours (9 AM – 5 PM, Monday to Friday).
     Please inform me within 24 hours of an assignment due date if you encounter issues.
 
-Considerations:
+Dependencies:
 
-    Ensure that all dependencies (Python modules like watchdog) are installed. If not, please install them using *pip install watchdog*.
+    Ensure that all dependencies (Python module watchdog) are installed.
+    If not, please install them using *pip install watchdog*.
 
