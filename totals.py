@@ -109,17 +109,34 @@ def read_updated_totals(csv_file_path):
         csv_file_path (str): The path to the CSV file.
 
     Returns:
-        list or None: The total_balance row as a list, or None if not found or error occurs.
-    """
+        the final value in the total_balance row, or None if the row is not found."""
     try:
+        if not os.path.exists(csv_file_path):
+            raise FileNotFoundError(f"CSV file not found: {csv_file_path}")
+
+        # Read the CSV file
         with open(csv_file_path, mode='r', newline='') as csvfile:
             reader = csv.reader(csvfile)
-            for row in reader:
-                if row and row[0].strip().lower() == "total_balance":
-                    return row
+            rows = list(reader)
+
+        if not rows:
+            raise ValueError("CSV file is empty.")
+
+        # Process each row (starting from the second row)
+        for row in rows[1:]:
+            # Check if this is the total_balance row (case-insensitive)
+            if row and row[0].strip().lower() == "total_balance":
+                total_balance = row[3]
+                return total_balance
+
+        print("Total balance row not found in the CSV file.")
+        return None
+
     except Exception as e:
-        logging.error(f"ERR002: Error reading updated totals from CSV file {csv_file_path}: {str(e)}")
-    return None
+        error_code = "ERR002"
+        logging.error(f"{error_code}: Error reading CSV file {csv_file_path}: {str(e)}")
+        print(f"Error reading CSV file {csv_file_path}. See error.log for details.")
+        return None
 
 
 class CSVFileEventHandler(FileSystemEventHandler):
