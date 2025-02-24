@@ -37,3 +37,31 @@ total_balance = read_updated_totals(csv_path)
 print("Total Balance Row:", total_balance)
 ```
 <img width="543" alt="Screenshot 2025-02-23 at 5 35 15 PM" src="https://github.com/user-attachments/assets/63ea2615-747a-4d04-a7ee-f8948cf3f987" />
+
+
+<br>
+
+## Mitigation Plan
+For which teammate did you implement “Microservice A”?
+
+    I implemented Microservice A for [Teammate Name].
+Current status of the microservice:
+
+    The microservice is complete and fully functional.
+Access Details:
+
+    You can clone the repository from GitHub using the following link:
+    https://github.com/MasonR03/cs361_microservice_a
+
+Execution: The microservice is designed to be run locally. You should run the code on your local machine.
+
+In case of issues accessing/calling the microservice:
+
+    If you experience any issues, please contact me directly via Discord or email rauschkm@oregonstate.edu
+    I am available during regular working hours (9 AM – 5 PM, Monday to Friday).
+    Please inform me within 24 hours of an assignment due date if you encounter issues.
+
+Considerations:
+
+    Ensure that all dependencies (Python modules like watchdog) are installed. If not, please install them using *pip install watchdog*.
+
