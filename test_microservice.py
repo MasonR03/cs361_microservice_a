@@ -1,5 +1,3 @@
-import csv
-import os
 from totals import request_update, read_updated_totals
 
 def main():
