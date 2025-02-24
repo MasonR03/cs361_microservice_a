@@ -1,7 +1,7 @@
 # Stock Balance Totals Microservice
 # CS361 Microservice A
 
-This microservice updates stock balance data stored in a CSV file by recalculating each stock's total (quantity * current_price) and ensuring that the `total_balance` row is correctly maintained. It also supports monitoring the CSV file for changes using Python's watchdog library.
+This microservice updates stock balance data stored in a CSV file by recalculating each stock's total (quantity * current_price) and ensuring that the `total_balance` row is correctly maintained. It also supports monitoring the CSV file for changes using Python's watchdog library, as well as the ability to return the total balance with a function call. 
 
 ---
 
