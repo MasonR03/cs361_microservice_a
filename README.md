@@ -19,18 +19,31 @@ This microservice updates stock balance data stored in a CSV file by recalculati
 <br>
 <br>
 
-**Example of creating a CSV file for monitoring**
-    ```def write_csv(stocks):
-        with open("example1.csv", "w", newline="") as csvfile:
-            writer = csv.writer(csvfile)
-            
-            # Write header
-            writer.writerow(["stock_name", "quantity", "current_price", "total"])
-            
-            # Write stock rows without any calculations
-            for stock in stocks:
-                writer.writerow([stock["stock_name"], stock["quantity"], stock["current_price"], ""])
-            writer.writerow(["total_balance", "", "", ""])```
+## Example: Creating a CSV File for Monitoring
+
+Below is an example of how to create a CSV file that can be monitored by the microservice:
+
+```python
+import csv
+
+def write_csv(stocks):
+    with open("example1.csv", "w", newline="") as csvfile:
+        writer = csv.writer(csvfile)
+
+        # Write header
+        writer.writerow(["stock_name", "quantity", "current_price", "total"])
+
+        # Write each stock row without calculations
+        for stock in stocks:
+            writer.writerow([stock["stock_name"], stock["quantity"], stock["current_price"], ""])
+        
+        # Append a row for the total balance
+        writer.writerow(["total_balance", "", "", ""])
+```
+
+Then simply monitor the file with the microservice by using the monitor flag
+
+```python3 totals.py --monitor example1.csv```    
 
 <img width="543" alt="Screenshot 2025-02-23 at 5 35 15 PM" src="https://github.com/user-attachments/assets/63ea2615-747a-4d04-a7ee-f8948cf3f987" />
 
