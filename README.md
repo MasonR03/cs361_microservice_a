@@ -14,7 +14,7 @@ This microservice updates stock balance data stored in a CSV file by recalculati
 
 **Continuous Monitoring:**
 
-```python3 totals.py path/to/your/stock_data.csv --monitor```
+```python3 totals.py --monitor path/to/your/stock_data.csv```
 
 <br>
 <br>
