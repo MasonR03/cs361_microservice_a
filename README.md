@@ -36,3 +36,4 @@ csv_path = 'path/to/your/stock_data.csv'
 total_balance = read_updated_totals(csv_path)
 print("Total Balance Row:", total_balance)
 ```
+<img width="543" alt="Screenshot 2025-02-23 at 5 35 15 PM" src="https://github.com/user-attachments/assets/63ea2615-747a-4d04-a7ee-f8948cf3f987" />
