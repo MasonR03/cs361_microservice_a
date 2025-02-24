@@ -17,8 +17,7 @@ This microservice updates stock balance data stored in a CSV file by recalculati
 ```python3 totals.py path/to/your/stock_data.csv --monitor```
 
 <br>
-
-To programmatically update the CSV file totals, call the request_update function from the microservice. This function reads your CSV file, recalculates each stock’s total (quantity * current_price), and writes back the updated data.
+<br>
 
 **Example to Update CSV File Totals**
 
@@ -28,9 +27,6 @@ from totals import request_update
 csv_path = 'path/to/your/stock_data.csv'
 request_update(csv_path)
 ```
-
-To programmatically retrieve the updated balance, call the read_updated_totals function. This reads the totals column in the CSV file and returns
-the total balance row.
 
 **Example to Retrieve the Updated Total Balance**
 
